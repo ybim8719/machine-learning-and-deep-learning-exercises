@@ -1,0 +1,7 @@
+.venv/
+venv/
+__pycache__/
+/model
+/attempts/CAMEMBERT_fine_tuned/model/
+/attempts/LSTM/model
+/attempts/LSTM_enriched_data/model
