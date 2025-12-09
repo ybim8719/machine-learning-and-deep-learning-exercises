@@ -1,0 +1,67 @@
+import type { PredictionResponse } from './types';
+
+export const mockPredictionResponse: PredictionResponse = {
+  predictedCategory: {
+    name: "Services publics",
+    confidence: 0.95,
+    analyse: "la confiance est satisfaisante pour cette catégorie, voici les analyses statistiques associées",
+    datasetSize: 5000,
+    metrics: {
+      startingYear: 2010,
+      endingYear: 2025,
+      numberOfRecords: 1234,
+      breakdownByCategory: [
+        { category: "Services publics", percentage: 15, selected: true },
+        { category: "Transport", percentage: 10, selected: false },
+        { category: "Santé", percentage: 20, selected: false },
+        { category: "Éducation", percentage: 30, selected: false },
+        { category: "Autre", percentage: 15, selected: false },
+        { category: "Machin1", percentage: 10, selected: false }
+      ],
+      postalCodeDistribution: [
+        { postalCode: "75001", count: 100 },
+        { postalCode: "75002", count: 150 },
+        { postalCode: "75003", count: 200 },
+        { postalCode: "75004", count: 300 }
+      ],
+      statuses: {
+        pieChart: {
+          abandoned: 5,
+          inProgress: 15,
+          completed: 80
+        },
+        abandonedExamples: [
+          { title: "Projet A rgfsfes fes", budget: 5000, year: "2021" },
+          { title: "Projet Brdgd r", budget: 10000, year: "2020" },
+          { title: "Projet Crg d", budget: 7500, year: "2019" },
+          { title: "Projet D rfgdr", budget: 2000, year: "2022" },
+          { title: "Projet E dgdrgd", budget: 3000, year: "2021" }
+        ]
+      },
+      priorityArea: {
+        highPriority: 30,
+        lowPriority: 25
+      },
+      budget: {
+        median: 1000000,
+        average: 5000,
+        min: 100,
+        max: 2000000,
+        fiveMostExpensive: [
+          { title: "Projet A rgfsfes fes", budget: 120000, year: "2021" },
+          { title: "Projet Brdgd r", budget: 115000, year: "2020" },
+          { title: "Projet Crg d", budget: 110000, year: "2019" },
+          { title: "Projet D rfgdr", budget: 105000, year: "2022" },
+          { title: "Projet E dgdrgd", budget: 100000, year: "2021" }
+        ],
+        fiveLeastExpensive: [
+          { title: "Projet E dgdrgd", budget: 1000, year: "2021" },
+          { title: "Projet D rfgdr", budget: 2000, year: "2022" },
+          { title: "Projet A rgfsfes fes", budget: 3000, year: "2021" },
+          { title: "Projet Crg d", budget: 4000, year: "2019" },
+          { title: "Projet Brdgd r", budget: 5000, year: "2020" }
+        ]
+      }
+    }
+  }
+};
